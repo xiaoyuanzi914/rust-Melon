@@ -1,0 +1,1 @@
+{"rustc":16040563314884802033,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[3697036713963773843,"build_script_build",false,7357818700020098909]],"local":[{"RerunIfChanged":{"output":"debug/build/c2rust_out-eccfa6707f1e1989/output","paths":["include/mln_class.h"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

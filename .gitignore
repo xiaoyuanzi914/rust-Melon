@@ -1,0 +1,9 @@
+.tmpSubIncs/
+Makefile
+lib/
+objs/
+bin/
+build/
+conf/melon.conf
+bazel-*
+MODULE.bazel*

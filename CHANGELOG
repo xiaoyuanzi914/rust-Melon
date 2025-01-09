@@ -1,0 +1,554 @@
+This CHANGELOG file will no longer be used.
+For details on future updates, please refer to commits and tags.
+This CHANGELOG will be kept as a historical document in the codebase.
+
+Changes with melon 2.8.1                                          10 Oct 2023
+    *) Fixed bug in log module
+    *) Fixed return value check in fork module
+    *) Update type conversion
+    *) Added level colour to log
+    *) Updated log timezone to UTC
+    *) Added github workflows to build and publish docker images and generate docs
+    *) Refactored json module
+    *) Fixed fork bug of framework
+    *) Fixed bugs in rbtree macros
+    *) Renamed defs to utils
+    *) Supported module selective compilation
+    *) Refactored configure
+    *) Added a macro for mmap detection
+    *) Added a parameter to configure to control macros
+    *) Optimized matched results in regular expression
+    *) Updated docs
+
+Changes with melon 2.8.0                                          02 Sep 2023
+    *) Updated configure to support more parameters and OS environment
+    *) Fixed the bug of iothread msg
+    *) Fixed env bug in lexer init
+    *) Created CODE_OF_CONDUCT.md
+    *) Updated callback pointers in rbtree and fheap to avoid compiler's warning
+    *) Fixed log path bug
+    *) Added tostring function and init macro to bignum for debugging
+    *) Renamed core module to framework module
+    *) Added assert macro for debugging
+    *) Updated init function prototype for melang import api
+    *) Updated the log module so that it can be used regardless of whether it is initialized or not
+    *) Updated the conf module to make sure it will be initialized only once even init function called multiple times
+    *) Removed log from connection, event, thread pool, garbage collection and memory pool modules
+    *) Fixed bug of reed-solomon module
+    *) Optimized framework initialization
+    *) Updated docs
+
+Changes with melon 2.7.1                                          08 Aug 2023
+    *) Updated configuration directives
+    *) Updated functions' name of conf module
+    *) Updated functions' name of json module
+    *) Updated functions' name of log module
+    *) Updated functions' name of prime module
+    *) Updated functions' name of connection module
+    *) Updated functions' name of file module
+    *) Updated functions' name of fork module
+    *) Updated functions' name of asn1 module
+    *) Updated functions' name of http module
+    *) Updated functions' name of rbtree module
+    *) Fixed import bug in melang
+    *) Optimized red-black tree performance
+    *) Optimized fibonacci heap performance
+    *) Fixed nonnull error of event module
+    *) Updated docs
+
+Changes with melon 2.7.0                                          31 Jul 2023
+    *) Optimized melang performance
+    *) Optimized configuration directives
+    *) Optimized queue performance
+    *) Fixed path and tool compilation errors
+    *) Optimized AES performance
+    *) Optimized JSON performance
+    *) Optimized MD5 performance
+    *) Optimized SHA performance
+    *) Fixed script variable name bug
+    *) Fixed empty script task bug
+    *) Fixed configuration segment fault
+    *) Added base directory character in directive 'include' of lexer
+    *) Updated docs
+
+Changes with melon 2.6.5                                          02 Feb 2023
+    *) Upgraded array component
+    *) Optimized pipe send of melang
+    *) Optimized core component
+    *) Optimized multi-process framework
+    *) Optimized multi-thread framework
+    *) Added pipe receive feature to melang
+    *) Updated docs
+
+Changes with melon 2.6.4                                          21 Jan 2023
+    *) Updated and optimized rbtree, fib-heap and hash components
+    *) Optimized trace component for trace mode
+    *) Added array structure
+    *) Updated docs
+
+Changes with melon 2.6.3                                          17 Jan 2023
+    *) Updated trace module
+    *) Updated Dockerfile
+    *) Update red-black tree module
+    *) Added doubly linked list
+
+Changes with melon 2.6.2                                          30 Dec 2022
+    *) Updated naming convention for functions in event module
+    *) Fixed error in configuration module
+    *) Supported Docker
+    *) Optimized Melang performance
+    *) Supported Webassembly
+
+Changes with melon 2.6.1                                          30 Nov 2022
+    *) Upgraded trace component
+    *) Added function pointer 'update' to configuration item structure
+    *) Optimized environment variable settings in lexer and lang component
+    *) Updated melang naming convention
+    *) Updated internal functions' name in Melang
+    *) Fixed bug of lang cache path
+    *) Updated docs
+
+Changes with melon 2.6.0                                          22 Nov 2022
+    *) Fixed bug of lang pipe send function
+    *) Optimized callback function about lang task exit
+    *) Optimized string macros
+    *) Added trace mode
+    *) Fixed bug of lang cache path
+    *) Updated Melang naming convention for global name
+    *) Updated internal functions name in Melang
+
+Changes with melon 2.5.6                                          20 Nov 2022
+    *) Removed no-use macro
+    *) Optimized  log component
+    *) Optimized melang pipe
+    *) Fixed bug of melang pipe
+    *) Fixed Kqueue bug
+    *) Optimized timer event
+    *) Added timer cancellation function
+
+Changes with melon 2.5.5                                          17 Nov 2022
+    *) Removed no-use macros
+    *) Optimized log component
+    *) Updated log docs
+
+Changes with melon 2.5.4                                          14 Nov 2022
+    *) Fixed bug of error component
+    *) Added functions in C and Melang to send message from c to script
+    *) Updated docs
+
+Changes with melon 2.5.3                                          03 Nov 2022
+    *) Optimize melang performance
+    *) Update import function of melang
+    *) update logo
+    *) Updated naming conventions of hash, rbtree, queue, stack and fork components
+    *) Optimize argument of iterate function in rbtree
+    *) Added macros for getting user data from fheap and rbtree nodes
+    *) Updated docs
+    *) Added error component
+
+Changes with melon 2.5.2                                          29 Sep 2022
+    *) Upgraded iothread
+    *) Optimized lang lock
+    *) Updated functions in lang
+    *) Fixed event bugs
+    *) Fixed memory pool bug in lang
+
+Changes with melon 2.5.1                                          23 Sep 2022
+    *) Fixed event bugs
+    *) Optimized event
+    *) Updated functions of lang
+    *) Fixed bugs of lang
+    *) Added eval as an internal function of melang
+
+Changes with melon 2.5.0                                          16 Sep 2022
+    *) Updated rbtree functions
+    *) Optimized iothread
+    *) Upgraded event to support multi-thread
+    *) Fixed select error on Windows
+    *) Upgraded Melang to enable tasks to execute across threads
+    *) Fixed event break
+    *) Updated docs
+
+Changes with melon 2.4.1                                          04 Sep 2022
+    *) Updated configure shell
+    *) Added iothread component
+    *) Updated docs
+
+Changes with melon 2.4.0                                          28 Aug 2022
+    *) Optimized memory pool to support hierarchical pool
+    *) Optimized configuration processing
+    *) Updated fib-heap to support memory pool
+    *) Updated spinlock
+    *) Optimized core library, moved melang library to repository Melang
+    *) Fixed dlopen memory bug in melang import function
+    *) Added new function in script interpreter
+    *) Updated docs
+    *) Added English docs
+
+Changes with melon 2.3.4                                          18 Aug 2022
+    *) Added parent pool for memory pool component
+    *) Upgraded mln_import to have a return value in script layer
+    *) Added master processing handle for multi-process framework
+    *) Updated docs
+
+Changes with melon 2.3.3                                          19 May 2022
+    *) Added more path hook
+    *) Added log hook
+    *) Fixed JSON bug
+    *) Fixed file name bug in melang error tips
+    *) Added string trim, upper, lower and join
+    *) Updated docs
+
+Changes with melon 2.3.2                                          29 Apr 2022
+    *) Fixed warnings on gcc 11.x and mingw
+    *) Added path hook
+    *) Added log hook
+    *) Updated docs
+
+Changes with melon 2.3.1                                          18 Apr 2022
+    *) Fixed warning on Win32
+    *) Fixed fib-heap bug
+    *) Updated docs
+
+Changes with melon 2.3.0                                          14 Apr 2022
+    *) Fixed json bugs
+    *) Fixed melang msgqueue bugs
+    *) Fixed cron bugs
+    *) Fixed melang exec bug
+    *) Fixed melang GC bug
+    *) Fixed event bug
+    *) Fixed dup warning
+    *) Optimized string slice
+    *) Updated for win32
+    *) Updated naming convention
+    *) Updated melang function call syntax
+    *) Added dynamic library import to melang
+    *) Updated red-black tree release order
+    *) Fixed file descriptor leak in melang
+    *) Optimized melang co-routine memory overhead
+    *) Optimized memory pool
+    *) Optimized multi-thread mode
+    *) Optimized IPC handler register
+    *) Updated docs
+
+Changes with melon 2.2.2                                          14 Aug 2021
+    *) Add array diff and key diff in melang
+    *) Add shell command execution function in melang
+
+Changes with melon 2.2.1                                          11 Aug 2021
+    *) Update and add some time functions
+    *) Add cron format expression parser
+    *) Add functions for operating time, cron and directory in melang
+
+Changes with melon 2.2.0                                          14 May 2021
+    *) Fix bugs
+    *) Add Github Pages docs
+    *) Add operator overloading in melang
+    *) Add closure in melang
+
+Changes with melon 2.1.0                                          02 Feb 2021
+    *) Optimized melang performance
+    *) Fixed melang bugs
+    *) Added shared memory
+    *) Updated License
+
+Changes with melon 2.0.2                                          13 Apr 2020
+    *) Optimized file function in melang
+    *) Added functions for operating directoies in melang
+    *) Supported variable arguments in melang
+    *) Updated License
+
+Changes with melon 2.0.1                                          11 Mar 2020
+    *) Added message queue and topic in melang
+    *) Fixed melang and fib-heap bugs
+
+Changes with melon 2.0.0                                          08 Mar 2020
+    *) Added UDP module in melang
+    *) Updated print function for array in melang
+
+Changes with melon 1.9.2                                          06 Mar 2020
+    *) Added TCP module in melang
+
+Changes with melon 1.9.1                                          03 Mar 2020
+    *) Added eval function in melang
+    *) Dropped melang's tcp functions
+
+Changes with melon 1.9.0                                          01 Mar 2020
+    *) Added MySQL module in script language
+    *) Fixed file bugs in script language
+    *) Added more sys-module functions for melang
+
+Changes with melon 1.8.0                                          30 Sep 2019
+    *) Updated Melang's productions
+
+Changes with melon 1.7.0                                          20 Aug 2018
+    *) Supported TCP network for melang
+
+Changes with melon 1.6.12                                         14 Jul 2018
+    *) Fixed some bugs in melang
+    *) Supported Reactive Programming in melang
+
+Changes with melon 1.6.11                                         03 Feb 2018
+    *) Update License
+    *) Add some basic functions for script language
+
+Changes with melon 1.6.10                                         03 Aug 2017
+    *) Added function to getting array length for melang script.
+    *) Fixed some bugs for melang script.
+    *) Supported adding property dynamically.
+
+Changes with melon 1.6.9                                          01 Aug 2017
+    *) Added reflection for melang script.
+    *) Updated Red-Black Tree interfaces.
+    *) Fixed a bug of keyword 'return' in melang script.
+    *) Dropped keyword 'set' from melang script.
+    *) Added garbage collector.
+
+Changes with melon 1.6.8                                          22 May 2017
+    *) Added script functions about matrix.
+
+Changes with melon 1.6.7                                          20 May 2017
+    *) Fixed some bugs of JSON.
+    *) Added script functions about JSON.
+
+Changes with melon 1.6.6                                          18 May 2017
+    *) Added script function about Base64.
+    *) Added script functions about DES, 3DES.
+    *) Added script function about MD5.
+    *) Added script functions about SHA1, SHA256.
+    *) Added script function about RC4.
+    *) Added script function about Prime Generator.
+
+Changes with melon 1.6.5                                          17 May 2017
+    *) Added script function about AES.
+
+Changes with melon 1.6.4                                          16 May 2017
+    *) Updated Lang component.
+    *) Added Set of file of melang.
+    *) Updated interfaces of string of melang.
+    *) Fixed a bug in interface print of melang.
+    *) Updated a macro in defs component.
+
+Changes with melon 1.6.3                                          13 May 2017
+    *) Updated Lang component.
+    *) Fixed some bugs about Lang component.
+    *) Added some melang functions for string.
+
+Changes with melon 1.6.2                                          07 May 2017
+    *) Added FEC component.
+    *) Added Reed-Solomon Code component.
+    *) Added Matrix component.
+    *) Updated some macros.
+
+Changes with melon 1.6.1                                          14 Apr 2017
+    *) Dropped malloc/free library -- salloc.
+    *) Fixed a bug in melang.
+    *) Dropped some source files.
+    *) Added a new component -- core.
+    *) Made framework to be a library.
+
+Changes with melon 1.6.0                                          12 Feb 2017
+    *) Added Lang component to execute script AST.
+    *) Added Lang components of all data types.
+    *) Updated string component.
+    *) Updated log component.
+    *) Updated event component.
+    *) Updated shell script 'configure'.
+    *) Dropped useless directory.
+    *) Added new directory for function development of melang.
+
+Changes with melon 1.5.12                                         23 Dec 2016
+    *) Updated AST component.
+
+Changes with melon 1.5.11                                         11 Dec 2016
+    *) Updated production in AST component.
+    *) Modified interface to get information from thread pool.
+
+Changes with melon 1.5.10                                         08 Dec 2016
+    *) Fixed bugs of parser generator.
+    *) Added an interface for thread pool.
+    *) Added a new component of AST.
+
+Changes with melon 1.5.9                                          18 Nov 2016
+    *) Optimized lex component.
+    *) Fixed bugs of parser generator.
+
+Changes with melon 1.5.8                                          06 Nov 2016
+    *) Added thread pool component.
+    *) Updated shell script 'configure'.
+
+Changes with melon 1.5.7                                          27 Oct 2016
+    *) Added a parameter for script 'configure' to specify
+       the target binary file name.
+    *) Updated log component to support logging type 'mln_string_t'.
+    *) Fixed a mistake in parser generator component.
+
+Changes with melon 1.5.6                                          23 Oct 2016
+    *) Updated lex component, support preprocessing.
+    *) Updated parser generator.
+    *) Updated configuration component to support preprocessing.
+    *) Updated stack component.
+    *) Updated misc tool functions.
+
+Changes with melon 1.5.5                                          15 Oct 2016
+    *) Fixed an error of ASN.1.
+
+Changes with melon 1.5.4                                          15 Sep 2016
+    *) Added ASN.1 component.
+    *) Updated RSA component.
+    *) Updated Tool component.
+    *) Updated Log component.
+    *) Fixed a bug of parsing timestamp.
+    *) Updated Hash component.
+    *) Updated Fork component.
+    *) Fixed macro names in Parser generator component.
+    *) Updated String component and relevant components.
+    *) Updated Event component.
+    *) Updated Bignum component.
+    *) Modified Chain component.
+    *) Modified Connection component.
+    *) Optimized Conf component.
+    *) Optimized File cache component.
+    *) Optimized Thread component.
+    *) Optimized Parser generator component.
+
+Changes with melon 1.5.3                                          28 Jun 2016
+    *) Added some interfaces for RSA
+    *) Added some interfaces for Big number.
+
+Changes with melon 1.5.2                                          20 May 2016
+    *) Added SHA256.
+
+Changes with melon 1.5.1                                          17 May 2016
+    *) Normalized many functions' name.
+    *) Fixed a bug of timestamp in log.
+
+Changes with melon 1.5.0                                          14 May 2016
+    *) Added two interfaces for HTTP.
+    *) Added websocket.
+
+Changes with melon 1.4.3                                          02 May 2016
+    *) Added an interface of hash table.
+
+Changes with melon 1.4.2                                          25 Apr 2016
+    *) Optimized calculation of Big Number.
+    *) Fixed some bugs of Big Number and HTTP.
+
+Changes with melon 1.4.1                                          20 Apr 2016
+    *) Optimized division of Big Number.
+    *) Fixed some bugs of Big Number.
+
+Changes with melon 1.4.0                                          09 Apr 2016
+    *) Added Big Number.
+    *) Added MD5.
+    *) Added SHA1.
+    *) Added DES and 3DES.
+    *) Added RC4.
+    *) Added AES.
+    *) Added Base64.
+    *) Added RSA.
+
+Changes with melon 1.3.6                                          14 Dec 2015
+    *) Supported json (not rely on any libraries).
+    *) Reconstructed HTTP component.
+    *) Optimized Hash component and added some new functions.
+    *) Fixed a bug of file cache.
+
+Changes with melon 1.3.5                                          22 Nov 2015
+    *) Supported regular expression (not rely on PCRE).
+
+Changes with melon 1.3.4                                          11 Nov 2015
+    *) Removed some interfaces of connections.
+    *) Added some new interface for connections.
+    *) Fixed a bug of inter-thread communication.
+    *) Optimized inter-process communication.
+    *) Optimized inter-thread communication.
+
+Changes with melon 1.3.3                                          06 Nov 2015
+    *) Fixed some bugs of parsing HTTP protocol.
+    *) Added an interface for HTTP protocol.
+    *) Added an interface for TCP connection.
+
+Changes with melon 1.3.2                                          22 Oct 2015
+    *) Added one interface for the communication
+       between master process and worker process.
+    *) Added some interfaces for getting socket
+       file descriptor of tcp connection.
+    *) Added some interfaces for testing whether the
+       chains are empty.
+    *) Added a boot parameter for stop melon service.
+
+Changes with melon 1.3.1                                          20 Oct 2015
+    *) Fixed a bug of event component.
+    *) Added a configuration command for log path.
+    *) Added a boot parameter for reload configuration.
+
+Changes with melon 1.3.0                                          17 Sep 2015
+    *) Added a log level (Warn).
+    *) Added two configuration command (max_nofile and
+       core_file_size).
+    *) Added an new interface in mln_hash.c for changing value
+       (mln_hash_change_value()).
+    *) Added HTTP components.
+
+Changes with melon 1.2.8                                          14 Sep 2015
+    *) Added a memory pool.
+    *) Added a change structure.
+    *) Added a buffer structure.
+    *) Added another implementation of tcp I/O.
+    *) Added some interfaces of string.
+    *) Added an implementation of file cache.
+
+Changes with melon 1.2.7                                          29 Jul 2015
+    *) Fixed some bugs about lock.
+
+Changes with melon 1.2.6                                          27 Jul 2015
+    *) Fixed some bugs of salloc.
+
+Changes with melon 1.2.5                                          20 Jul 2015
+    *) Optimized the initialization of boot parameters.
+    *) Optimized the initialization of log and daemon.
+    *) Fixed Makefile not to overwrite configuration file.
+    *) Deleted the shell script code which created user 'melon'.
+    *) Added configuration item for changing user.
+
+Changes with melon 1.2.4                                          03 Jul 2015
+    *) Modified shell script 'configure'.
+    *) Modified the input arguments of KMP algorithm.
+    *) Modified the prototype of function 'mln_conf_set_hook'.
+    *) Added an interface 'mln_conf_unset_hook' to unset a
+       callback handler which is indicated by the argument.
+
+Changes with melon 1.2.3                                          10 May 2015
+    *) Modified configuration's data structures.
+    *) Added an interface for reloading configurations.
+    *) Modified the interface form of 'mln_tcp_connection_set_buf'.
+    *) Modified the interface form of 'mln_event_set_fd'.
+    *) Added two marcos for fd-event timeout.
+    *) Added an interface for setting fd-event timeout handler.
+    *) Added an interface for breaking out of 'mln_dispatch()'.
+    *) Added an interface for setting an callback routine in
+       'mln_dispatch()'.
+    *) Modified some interfaces' implementation in event module.
+    *) Added an interface for visiting every worker process node
+       and processing the node with a specified fd-event handler.
+    *) Added an interface for visiting every data in hash table
+       and processing the data with a specified function.
+    *) Modified the macro interface form of 'MLN_DEFINE_TOKEN()'.
+    *) Modified log data structures.
+    *) Added an interface for reloading log configurations.
+    *) Modified the format of log message.
+    *) Added a new feature -- a LALR(1) Parser Generator.
+    *) Added a new data structure module -- mln_queue.
+    *) Added a new data structure module -- mln_stack.
+    *) Added a new function 'mln_init_all_resource()' for
+       initializing some essential resources.
+    *) Added a new function 'mln_worker_process()' for
+       writing worker process routine.
+    *) Added a marco to judge whether the return value of
+       'mln_rbtree_search()' is NULL.
+    *) Added an interface for visiting every red-black tree node
+       and processing the node with a specified function.
+
+Changes with melon 0.8.1                                          01 Mar 2015
+    *) The first public version.

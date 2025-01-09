@@ -1,0 +1,13 @@
+/home/dell/Melon-master/target/debug/deps/libquote-12e80016320c92b8.rmeta: /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/lib.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/ext.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/format.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/ident_fragment.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/to_tokens.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/runtime.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/spanned.rs
+
+/home/dell/Melon-master/target/debug/deps/libquote-12e80016320c92b8.rlib: /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/lib.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/ext.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/format.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/ident_fragment.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/to_tokens.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/runtime.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/spanned.rs
+
+/home/dell/Melon-master/target/debug/deps/quote-12e80016320c92b8.d: /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/lib.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/ext.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/format.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/ident_fragment.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/to_tokens.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/runtime.rs /home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/spanned.rs
+
+/home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/lib.rs:
+/home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/ext.rs:
+/home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/format.rs:
+/home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/ident_fragment.rs:
+/home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/to_tokens.rs:
+/home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/runtime.rs:
+/home/dell/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/quote-1.0.38/src/spanned.rs:

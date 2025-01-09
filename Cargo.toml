@@ -1,0 +1,27 @@
+[package]
+name = "c2rust_out"
+authors = ["C2Rust"]
+version = "0.0.0"
+publish = false
+edition = "2021"
+autobins = false
+
+[[bin]]
+name = "aes_test"
+path = "src/main.rs"
+
+[lib]
+name = "c2rust_out"
+path = "src/lib.rs"
+crate-type = ["staticlib", "rlib"]
+
+# 确保 build.rs 文件在根目录，并告诉 Cargo 使用它作为构建脚本
+build = "build.rs"
+
+[dependencies]
+bindgen = "0.59" # 用于生成 C 代码的绑定
+c2rust-bitfields = "0.3"
+libc = "0.2"
+
+[build-dependencies]
+bindgen = "0.59"  # 如果需要生成 C 头文件绑定
