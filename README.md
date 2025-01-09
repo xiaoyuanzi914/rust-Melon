@@ -1,8 +1,8 @@
 # rust-Melon
 
-原 Melon 是一个通用的跨平台 C 语言库。 它包含许多算法、数据结构、功能组件、脚本语言和实用框架，可以方便开发人员快速开发应用程序，避免重复造轮子的窘境。
+The original Melon is a general-purpose, cross-platform C library. It includes many algorithms, data structures, functional components, scripting languages, and utility frameworks, enabling developers to quickly develop applications and avoid reinventing the wheel.
 
-## 其中包括：
+## It includes:
 ### 1. Components:
 - Library Initialization
 - Configuration
@@ -62,43 +62,43 @@
 - Trace Mode
 - IPC
 
-## 平台支持： 
+## Platform Support: 
 - Linux
 - MacOSX
 - Windows
 - msys2 (Fully supported)
 - msvc (Partially supported)
 
-## 关于原Melon的安装及使用方法参考：
-- 原github地址：[https://github.com/Water-Melon/Melon](https://github.com/Water-Melon/Melon)
-  - （截止2025.1.9：Watch:22，Fork:202，Star:1.4k）
-- 中文详细参考文档：[http://doc.melonc.io/cn/](http://doc.melonc.io/cn/)
+## For installation and usage of the original Melon, refer to:
+- Original GitHub address: [https://github.com/Water-Melon/Melon](https://github.com/Water-Melon/Melon)
+  - (As of 2025.1.9: Watch:22, Fork:202, Star:1.4k)
+- Detailed Chinese documentation: [http://doc.melonc.io/cn/](http://doc.melonc.io/cn/)
 
-## 本项目对其进行RUST语言重写，包含所有算法、功能组件等，拥有了更快的执行速度、更高的效率、更低的资源消耗，提升了性能和安全性。
+## This project rewrites it in RUST language, including all algorithms, functional components, etc., achieving faster execution speed, higher efficiency, and lower resource consumption, thus improving performance and security.
 
-## 原项目代码数量与改写项目代码数量对比：
-| 项目      | C代码行数               | Rust代码行数   |
-|-----------|-------------------------|----------------|
-| 源码      | 8k头文件+42.2k           | 158.5k         |
-| 测试      | 1.26k                    | 2.1k           |
-| 总数      | 51.46k                   | 160k           |
+## Comparison of the original project code size vs rewritten project code size:
+| Project   | C Code Lines            | Rust Code Lines  |
+|-----------|-------------------------|------------------|
+| Source Code | 8k header files + 42.2k | 158.5k           |
+| Test Code  | 1.26k                   | 2.1k             |
+| Total      | 51.46k                  | 160k             |
 
-## 项目代码组织遵循行业标准的编码规范，接口兼容并满足安全性要求，结构组织如下：
-- `-bin`: 可执行文件
+## Project code organization follows industry-standard coding norms, ensuring interface compatibility and meeting security requirements. The structure is as follows:
+- `-bin`: Executable files
 - `-conf`
 - `-docs`
-- `-include`: C文件
+- `-include`: C files
 - `-lib`
-- `-objs`: .o文件合集
+- `-objs`: Collection of .o files
 - `-src`
   - `--lib.rs`
   - `--main.rs`
-  - `--.c文件合集`
-  - `--.rs文件合集`
+  - `--.c files collection`
+  - `--.rs files collection`
   - `--mod.rs`
-- `-t`: c单元测试
-- `-target`: RUST测试生成文件及记录
-- `-test`: RUST单元测试
+- `-t`: C unit tests
+- `-target`: Rust test generation files and records
+- `-test`: Rust unit tests
 - `-trace`
 - `build.rs`
 - `Cargo.lock`
@@ -107,76 +107,76 @@
 - `mln_class_building.rs`
 - `rust-toolchain.toml`
 - `README.md`
-- 其他文件...
+- Other files...
 
-# 使用指南
+# Usage Guide
 
-1. **先执行git clone命令下载源码**
+1. **First, execute the `git clone` command to download the source code**
     ```bash
     git clone <repository_url>
     ```
 
-2. **cd到该目录下**
+2. **Change to the project directory**
     ```bash
     cd <project_directory>
     ```
 
-3. **修改Cargo.toml文件中[[bin]]的name（非必须）**
-   - 打开`Cargo.toml`文件，找到[[bin]]部分，可以选择修改`name`字段（如果需要）。
+3. **Modify the `Cargo.toml` file's `[[bin]]` name (optional)**
+   - Open the `Cargo.toml` file, find the `[[bin]]` section, and modify the `name` field if needed.
 
-4. **执行cargo run --bin "bin的name"（如aes_test）**
+4. **Execute `cargo run --bin "bin name"` (e.g., aes_test)**
     ```bash
     cargo run --bin aes_test
     ```
 
-5. **修改main.rs，接口引用即：**
+5. **Modify `main.rs` for interface references as follows:**
     ```rust
     #[macro_use]
     extern crate c2rust_bitfields;
     mod mln_XXX;
     ```
-    > 注：alloc和class模块特殊为：
+    > Note: The `alloc` and `class` modules are special and should be written as:
     ```rust
     mod mln_alloc/class_bindings {
         include!("mln_alloc/class_bindings.rs");
     }
     ```
 
-6. **各模块测试代码详见/test/*.rs**
+6. **Detailed module test code can be found in `/test/*.rs`**
 
-7. **在/target/debug下./执行生成的可执行文件即可**
+7. **Run the generated executable file in `/target/debug` with `./`**
 
-8. **修改build.rs后执行cargo build可生成新的XXX_buildings.rs链接文件**
+8. **Modify `build.rs` and run `cargo build` to generate new `XXX_buildings.rs` linked files**
 
-9. **rust-toolchain.toml可修改rustc版本号**
-   - 打开`rust-toolchain.toml`文件，修改`rustc`版本号以适应你的需求。
+9. **The `rust-toolchain.toml` can be used to modify the `rustc` version number**
+   - Open the `rust-toolchain.toml` file and modify the `rustc` version number to suit your needs.
 
 ---
 
-> 以上步骤为项目配置和运行的基本流程，请按需调整配置文件。
+> The above steps provide the basic process for project configuration and execution. Adjust configuration files as needed.
 
-# 与原Melon项目性能对比（执行速度、效率、资源消耗）
+# Performance Comparison with the Original Melon Project (Execution Speed, Efficiency, Resource Consumption)
 
-对于并发或 I/O 性能，对比了 C 和 Rust 版本的执行速度、内存消耗、CPU 使用率等方面的差异，尤其是在并发场景下，Rust 的 async/await 特性提供了显著的性能优势。以下是具体的对比指标：
+For concurrency or I/O performance, we compared the execution speed, memory consumption, CPU usage, and other aspects between the C and Rust versions, especially in concurrent scenarios where Rust's async/await feature offers significant performance advantages. Below are the specific comparison metrics:
 
-## 性能对比指标
+## Performance Comparison Metrics
 
-1. **执行速度**：Rust 版本的执行速度比 C 版本提升了约 30% 至 50%，特别是在高并发的场景下，Rust 更能有效利用多核 CPU 的性能，减少线程上下文切换的开销。
-2. **内存消耗**：Rust 在内存管理上采用所有权系统，有效减少了内存泄漏和不必要的内存分配，内存消耗比 C 版本减少了约 20%。
-3. **CPU 使用率**：Rust 的并发模型通过 async/await 极大减少了线程阻塞，CPU 使用率比 C 版本低 15% 至 25%。
+1. **Execution Speed**: The execution speed of the Rust version is approximately 30% to 50% faster than the C version, especially in high-concurrency scenarios. Rust can better utilize multi-core CPUs and reduce the overhead of thread context switching.
+2. **Memory Consumption**: Rust uses an ownership system for memory management, which effectively reduces memory leaks and unnecessary memory allocations. The memory consumption is about 20% lower than the C version.
+3. **CPU Usage**: Rust's concurrency model with async/await greatly reduces thread blocking. CPU usage is 15% to 25% lower than the C version.
 
-## 性能对比图表
+## Performance Comparison Table
 
-| 指标        | C 版本 | Rust 版本 | 提升率   |
-|-------------|--------|-----------|----------|
-| 执行速度    | 100ms  | 70ms      | +30%     |
-| 内存消耗    | 50MB   | 40MB      | -20%     |
-| CPU 使用率  | 85%    | 60%       | -25%     |
+| Metric       | C Version | Rust Version | Improvement |
+|--------------|-----------|--------------|-------------|
+| Execution Speed | 100ms     | 70ms         | +30%        |
+| Memory Consumption | 50MB      | 40MB         | -20%        |
+| CPU Usage    | 85%       | 60%          | -25%        |
 
-Rust 版本的 async/await 能够在高并发情况下更好地利用 CPU 资源，而 C 版本则需要大量的线程管理，导致更多的上下文切换和 CPU 空闲时间。
+The Rust version's async/await can better utilize CPU resources in high-concurrency situations, whereas the C version requires extensive thread management, leading to more context switching and CPU idle time.
 
-此外，Rust 的类型系统和所有权模型减少了运行时错误和内存问题，使得程序的健壮性更高，从而在大规模应用场景中更加可靠。
+Additionally, Rust's type system and ownership model reduce runtime errors and memory issues, making the program more robust and reliable in large-scale application scenarios.
 
-## 总结
+## Summary
 
-通过对比可以看出，Rust 版本的 Melon 在执行速度、资源消耗、并发性能等方面优于 C 版本，特别是在高并发和 I/O 密集型应用中，Rust 的优势更为显著。
+The comparison shows that the Rust version of Melon outperforms the C version in execution speed, resource consumption, and concurrency performance. Rust's advantages are especially prominent in high-concurrency and I/O-intensive applications.
